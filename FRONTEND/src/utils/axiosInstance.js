@@ -1,9 +1,9 @@
 import axios from "axios"
 
 const axiosInstance = axios.create({
-    baseURL:"http://localhost:3000",
-    timeout:10000, //10s
-    withCredentials:true
+    baseURL: process.env.REACT_APP_BACKEND_URL,
+    timeout: 10000, //10s
+    withCredentials: true
 })
 
 // Response interceptor
